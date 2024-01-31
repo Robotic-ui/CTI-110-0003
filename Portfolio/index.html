@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
+
+<!--CHECK OUT THIS GREAT 10 MIN EXPLANATION OF CSS SELECTORS: https://youtu.be/Dfj0B6aL7Hs -->
+<!--And this about flexbox: https://www.youtube.com/watch?v=bbaKrRU4MVk-->
+<!--This guy does a great job of explaining how to use the Inspect tool to see what CSS is applied to which element: https://youtu.be/oRKlKhFt2Rg-->
+
 <head>
     <title>Personal Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
-    <link rel="stylesheet" href="src/main.css" .css">
+    <link rel="stylesheet" href="src/main.css">
 </head>
 
 <body>
 
     <!-- Start of nav bar -->
     <nav>
-        <div class="nav-logo">
+        <div class="nav-item">
             <a href="#">
-                <img src="images/logo.png">
+                <div>
+					<img src="images/logo.png">
+				</div>
             </a>
         </div>
 
-        <ul class="nav-links">
-            <li class="link"><a href="index.html">Home</a></li>
-            <li id="nav-link1" class="link"><a href="about.html">About</a></li>
-            <li id="nav-link2" class="link"><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="btn">Hire me</button>
+		<div class="nav-item">
+			<ul class="nav-links">
+				<li class="link"><a href="index.html">Home</a></li>
+				<li id="nav-link1" class="link"><a href="about.html">About</a></li>
+				<li id="nav-link2" class="link"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="nav-item" width="20%">
+			<button class="btn">Hire me</button>
+		</div>
     </nav>
     <!-- End of nav bar -->
 
