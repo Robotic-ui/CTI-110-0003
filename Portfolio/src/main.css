@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
+
 img{
-    width: 100%;
     display: flex;
 }
 
@@ -17,12 +17,14 @@ a{
     text-decoration: none;
 }
 
+/* controls background color for all pages*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #5959d2dc;
 }
 
 nav{
+	border: 2px solid red; /*Remove this line before production*/
     max-width: 1200px;
     margin: auto;
     padding: 2rem 1rem;
@@ -32,8 +34,36 @@ nav{
     gap: 2rem;
 }
 
-.nav-logo{
-    max-width: 100px;
+/*I used the inspect element to get the width/height of the image and button. I'm assuming you don't want them on every
+page, so I created divs their exact size to hold their places and keep the formatting of the navbar the same as you go from page to page*/
+
+#space_holder_img {
+	width:110px;
+	height:98px;
+}
+
+#space_holder_button {
+	width:120.01px;
+	height:50.4px;
+}
+
+#selfie {
+	background-color:teal;
+}
+
+#about_me {
+	color:white;
+}
+
+.center_horiz {
+	text-align:center;
+}
+	
+
+.nav-item{
+	border: 2px solid yellow; /*Remove this line before production*/
+	margin: 3px;
+	
 }
 
 .nav-links{
@@ -64,6 +94,7 @@ nav{
     width: 70%;
 }
 
+/* for this "Get to know me" button */
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -77,6 +108,8 @@ nav{
 .btn:hover{
     background-color: #212637;
 }
+/* END of the btn */
+
 
 .container{
     max-width: 1200px;
@@ -115,6 +148,12 @@ header .content h1{
 }
 
 header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+/*Added this to format your <h4> element on about.html*/
+header .content h4 span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
@@ -280,40 +319,4 @@ footer .column > a:hover{
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
-}
-
-@media (width < 900px){
-    .nav-links{
-        display: none;
-    }
-    
-    header{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    header .image{
-        grid-area: 1/1/2/2;
-    }
-
-    .projects{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    footer{
-        grid-template-columns: 1fr 200px;
-    }
-}
-
-@media (width < 600px){
-    header .image::before{
-        display: none;
-    }
-
-    .projects{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    footer{
-        grid-template-columns: 1fr 150px;
-    }
 }

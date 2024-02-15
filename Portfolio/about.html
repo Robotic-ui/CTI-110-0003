@@ -6,32 +6,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
-    <link rel="stylesheet" href="src/about.css">
+    <link rel="stylesheet" href="src/main.css">
 </head>
 
 <body>
 
     <!-- Start of nav bar -->
-    <nav>
-        <ul class="nav-links">
-            <li class="link"><a href="index.html">Home</a></li>
-            <li id="nav-link1" class="link"><a href="about.html">About</a></li>
-            <li id="nav-link2" class="link"><a href="contact.html">Contact</a></li>
-        </ul>
+	
+	<!--Inside of every element of class="container", the divs are laid out horizontally on the same line-->
+    <nav>  <!--if you look in main.css, you'll see the nav element uses flexbox-->
+		<div class="nav-item">
+				<div id="space_holder_img">
+                <!--empty div to make nav-links align correctly-->
+				</div>
+        </div>
+		
+		<div class="nav-item">
+			<ul class="nav-links">
+				<li class="link"><a href="index.html">Home</a></li>
+				<li id="nav-link1" class="link"><a href="about.html">About</a></li>
+				<li id="nav-link2" class="link"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="nav-item">
+			<div id="space_holder_button">
+                <!--empty div to make nav-links align correctly-->
+				</div>
+		</div>
     </nav>
     <!-- End of nav bar -->
     </header>
 
-    <section class="container">
-        <h2 class="header">About Me!</h2>>
-        <h4>Sebastian Rusbacky</h4>
-        <p>
-            Hello my name is Sebastian Rusbacky and I am a Beginner level I was Born in Oaho, Hawaii on July, 28th 2004
-            I have 2 dogs named Shelby, Ruger and I currently live with my father. I do have a sister however she is all
-            the way in Alaska for right now!
-        </p>
+    <!--Inside of every element of class="container", the divs are laid out horizontally on the same line-->
+    <header class="container">
+		<div id="selfie">
+			<h2>Use this space for an image</h2>
+		</div>
+		
+		<div id="about_me">
+			<h2 class="header center_horiz">About Me!</h2>
+			<span><h4>Sebastian Rusbacky</h4><span>
+			<p>
+				Hello my name is Sebastian Rusbacky and I am a Beginner level I was Born in Oaho, Hawaii on July, 28th 2004
+				I have 2 dogs named Shelby, Ruger and I currently live with my father. I do have a sister however she is all
+				the way in Alaska for right now!
+			</p>
         </div>
-    </section>
+    </header>
 
     <footer class="container">
         <span class="blur"></span>
