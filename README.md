@@ -1,2 +1,2 @@
 ## Intro to Python
-Sebastian Rusbacky
+Sebastian Rusbacky | Contains all assignments for CTI-110-0003
