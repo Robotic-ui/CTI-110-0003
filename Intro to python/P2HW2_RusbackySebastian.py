@@ -13,7 +13,6 @@ mod6_Grade = float(input("What is your Grade for Module 6? "))
 grades = [mod1_Grade, mod2_Grade, mod3_Grade, mod4_Grade, mod5_grade, mod6_Grade]
 
 print("--------- Results ----------")
-print(f"Lowest Grade: {lowest_grade}")
-print(f"Highest Grade: {highest_grade}")
-print(f"Sum of Grades: {grades_sum}")
-print(f"Average: {average}")
+print(f"Lowest Grade: {}")
+print(f"Highest Grade: {}")
+print(f"Sum of Grades: {}")
