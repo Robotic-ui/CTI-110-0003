@@ -18,7 +18,7 @@ gradesSum = sum(grades)
 # Find the average
 average = mod1_Grade + mod2_Grade + mod3_Grade + mod4_Grade + mod5_grade + mod6_Grade / 2
 
-print("--------- Results ----------")
+print("\n--------- Results ----------")
 print(f"Lowest Grade: {lowestGrade}")
 print(f"Highest Grade: {highestGrade}")
 print(f"Sum of Grades: {gradesSum}")
