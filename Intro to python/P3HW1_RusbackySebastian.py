@@ -15,21 +15,25 @@ mod_6 = int(input('Enter grade for Module 6: '))
 grades = [mod_1, mod_2, mod_3, mod_4, mod_5, mod_6]
 
 # finds min, max, sum and average for the list
-low = min(grades)
-high = max(grades)
-total = sum(grades)
-avg = total / len (grades)
+lowest_grade = min(grades)
+highest_grade = max(grades)
+totalGrade = sum(grades)
+average = totalGrade / len (grades)
 
 # determine letter grade for average... I used elif becuase it's just easier to keep track instead of else
-print("---------- Results ----------")
-if avg >= 90:
+print("---------- Results ----------\n")
+print(f"Lowest Grade:, {lowest_grade}")
+print(f"highest Grade:, {highest_grade}")
+print(f"total Grade:, {totalGrade}")
+print(f"Average:, {average}")
+
+print("--------------------")
+
+if average >= 90:
     print("Your average grade is: A")
-elif avg >= 80:
+elif average >= 80:
     print("Your average grade is: B")
-elif avg >= 70:
+elif average >= 70:
     print("Your average grade is: C")
 else:
     print("Your grade was determined to be below 70 by the programming gods so unfortunately you scored: F")
-
-print("--------------------")
-print(f"Your grade is", {avg})
