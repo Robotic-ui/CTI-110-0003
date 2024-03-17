@@ -21,6 +21,7 @@ total = sum(grades)
 avg = total / len (grades)
 
 # determine letter grade for average... I used elif becuase it's just easier to keep track instead of else
+print("---------- Results ----------")
 if avg >= 90:
     print("Your average grade is: A")
 elif avg >= 80:
@@ -29,3 +30,6 @@ elif avg >= 70:
     print("Your average grade is: C")
 else:
     print("Your grade was determined to be below 70 by the programming gods so unfortunately you scored: F")
+
+print("--------------------")
+print(f"Your grade is", {avg})
