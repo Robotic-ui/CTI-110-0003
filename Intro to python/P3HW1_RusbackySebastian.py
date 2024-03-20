@@ -22,10 +22,10 @@ average = totalGrade / len (grades)
 
 # determine letter grade for average... I used elif becuase it's just easier to keep track instead of else
 print("---------- Results ----------\n")
-print(f"Lowest Grade:, {lowest_grade}")
-print(f"highest Grade:, {highest_grade}")
-print(f"total Grade:, {totalGrade}")
-print(f"Average:, {average}")
+print(f"Lowest Grade: {lowest_grade}")
+print(f"highest Grade: {highest_grade}")
+print(f"total Grade: {totalGrade}")
+print(f"Average: {average}")
 
 print("--------------------")
 
