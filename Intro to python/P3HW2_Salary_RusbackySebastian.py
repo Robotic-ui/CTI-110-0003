@@ -10,7 +10,7 @@ if hoursWorked < 40:
     regHours = hoursWorked
     overtimeHours = 0
     print(" No Overtime! \n")
-else:  # hoursWorked >= 40
+else:
     regHours = 40
     overtimeHours = hoursWorked - 40
 
