@@ -2,8 +2,6 @@
 # 3/24/2024
 # P3HW2
 # clacs overtime hours, gross pay and payRate via user inputed values
-# ps. This actually isn't late just I forgot to add this comment part into my first attempt I didn't realize loll
-
 
 
 employeeName = input("Enter employee's name: ")
