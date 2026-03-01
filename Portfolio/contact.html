@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Contact</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Personal Portfolio</title>
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <!-- Navigation items -->
-        </nav>
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" width="110" height="98">
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <ul class="nav-links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="about.html">About</a></li>
+                <li class="link"><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-item">
+            <button class="btn">Hire me</button>
+        </div>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <header class="container fade-in">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>Get in Touch</h4>
+            <h1>Contact <span>Sebastian</span></h1>
+            <p>
+                You can reach me via email at <strong>rusbacks8015@faytech.edu</strong> or through my GitHub profile for collaborations.
+            </p>
+            <a href="mailto:rusbacks8015@faytech.edu"><button class="btn">Email Me</button></a>
+        </div>
+
+        <div class="image slide-in">
+            <img src="images/contact.png" alt="Contact Image">
+        </div>
     </header>
 
-    <main>
-        <section class="container">
-            <div class="box">
-                <h1>Contact</h1>
-                <!-- Contact content here -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Footer content -->
+    <!-- ===== FOOTER ===== -->
+    <footer class="fade-in">
+        <div class="socials slide-in">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
+        <div class="copyright fade-in">
+            &copy; 2023 <strong>Sebastian Rusbacky</strong>. All Rights Reserved.
+        </div>
     </footer>
+
+    <script src="src/main.js"></script>
 </body>
 </html>

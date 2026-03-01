@@ -1,75 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>About</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Personal Portfolio</title>
     <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
 </head>
 
 <body>
-
-    <!-- Start of nav bar -->
-	
-	<!--Inside of every element of class="container", the divs are laid out horizontally on the same line-->
-    <nav>  <!--if you look in main.css, you'll see the nav element uses flexbox-->
-		<div class="nav-item">
-				<div id="space_holder_img">
-                <!--empty div to make nav-links align correctly-->
-				</div>
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" width="110" height="98">
+            </a>
         </div>
-		
-		<div class="nav-item">
-			<ul class="nav-links">
-				<li class="link"><a href="index.html">Home</a></li>
-				<li id="nav-link1" class="link"><a href="about.html">About</a></li>
-				<li id="nav-link2" class="link"><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		
-		<div class="nav-item">
-			<div id="space_holder_button">
-                <!--empty div to make nav-links align correctly-->
-				</div>
-		</div>
+
+        <div class="nav-item">
+            <ul class="nav-links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="about.html" class="active">About</a></li>
+                <li class="link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-item">
+            <button class="btn">Hire me</button>
+        </div>
     </nav>
-    <!-- End of nav bar -->
-    </header>
 
-    <!--Inside of every element of class="container", the divs are laid out horizontally on the same line-->
-    <header class="container">
-		<div id="selfie">
-			<h2>Use this space for an image</h2>
-		</div>
-		
-		<div id="about_me">
-			<h2 class="header center_horiz">About Me!</h2>
-			<span><h4>Sebastian Rusbacky</h4><span>
-			<p>
-				Hello my name is Sebastian Rusbacky and I am a Beginner level I was Born in Oaho, Hawaii on July, 28th 2004
-				I have 2 dogs named Shelby, Ruger and I currently live with my father. I do have a sister however she is all
-				the way in Alaska for right now!
-			</p>
+    <!-- ===== HEADER ===== -->
+    <header class="container fade-in">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>About Me</h4>
+            <h1>Hello, I'm <span>Sebastian</span></h1>
+            <p>
+                I am a beginner web developer born in O'ahu, Hawaii on July 28th, 2004. I enjoy creating projects in Python and exploring web technologies.
+            </p>
+            <a href="contact.html"><button class="btn">Contact Me</button></a>
+        </div>
+
+        <div class="image slide-in">
+            <img src="images/about.png" alt="About Image">
         </div>
     </header>
 
-    <footer class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="socials">
+    <!-- ===== FOOTER ===== -->
+    <footer class="fade-in">
+        <div class="socials slide-in">
             <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-twitch-fill"></i></a>
             <a href="#"><i class="ri-github-fill"></i></a>
         </div>
+        <div class="copyright fade-in">
+            &copy; 2023 <strong>Sebastian Rusbacky</strong>. All Rights Reserved.
         </div>
+    </footer>
 
-        <div class="copyright">
-            Copyright © 2023 <strong>Sebastian Rusbacky</strong> All Rights Reserved.
-        </div>
-        <script src="main.js"></script>
+    <script src="src/main.js"></script>
 </body>
-
 </html>

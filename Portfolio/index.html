@@ -14,95 +14,81 @@
 </head>
 
 <body>
-
-    <!-- ===== NAVIGATION ===== -->
-    <nav class="navbar">
-        <div class="nav-container">
-
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Sebastian Logo">
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" width="110" height="98">
             </a>
+        </div>
 
+        <div class="nav-item">
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="link"><a href="index.html" class="active">Home</a></li>
+                <li class="link"><a href="about.html">About</a></li>
+                <li class="link"><a href="contact.html">Contact</a></li>
             </ul>
+        </div>
 
-            <a href="contact.html" class="btn">Hire Me</a>
-
+        <div class="nav-item">
+            <button class="btn">Hire me</button>
         </div>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
-    <header class="hero container">
-        <div class="hero-content">
-            <h4>Let's Create Together</h4>
-            <h1>Hi, I'm <span>Sebastian</span></h1>
-            <h3>Beginner Web Developer</h3>
-            <p>
-                Born in O'ahu, Hawaii on July 28th, 2004.
-                Passionate about building modern and functional websites.
-            </p>
-            <a href="about.html" class="btn">Get to Know Me</a>
+    <!-- ===== HEADER / HERO ===== -->
+    <header class="container fade-in">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>Let's create Together</h4>
+            <h1>Hi, I'm <span>Sebastian</span>, Beginner web dev!</h1>
+            <p>I was born in O'ahu, Hawaii on July 28th, 2004</p>
+            <a href="about.html"><button class="btn">Get to know me</button></a>
         </div>
 
-        <div class="hero-image">
-            <img src="images/header.png" alt="Developer Illustration">
+        <div class="image slide-in">
+            <img src="images/header.png" alt="Hero Image">
         </div>
     </header>
 
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section class="projects-section container">
-        <h2>Past Projects</h2>
-
-        <div class="projects-grid">
-
-            <article class="project-card">
-                <i class="ri-terminal-line icon"></i>
+    <!-- ===== PAST PROJECTS ===== -->
+    <section class="container fade-in" id="projects">
+        <h2 class="header">Past Projects</h2>
+        <div class="projects slide-in">
+            <div class="card fade-in">
+                <span><i class="ri-money-dollar-box-line"></i></span>
                 <h4>Port Probing Tool</h4>
-                <p>
-                    Python-based tool that scans host machines for open ports
-                    and potential vulnerabilities.
-                </p>
-                <a href="https://github.com/Robotic-ui" target="_blank">View on GitHub <i class="ri-arrow-right-line"></i></a>
-            </article>
+                <p>I created a port probing tool using Python which will automatically scan a host machine for vulnerabilities.</p>
+                <a href="https://github.com/Robotic-ui">See GitHub repo <i class="ri-arrow-right-line"></i></a>
+            </div>
 
-            <article class="project-card">
-                <i class="ri-bug-line icon"></i>
-                <h4>Bug Fix Assistance</h4>
-                <p>
-                    Helping developers debug and improve their code efficiently.
-                </p>
-                <a href="https://github.com/Robotic-ui" target="_blank">View on GitHub <i class="ri-arrow-right-line"></i></a>
-            </article>
+            <div class="card fade-in">
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Fix Your Bugs</h4>
+                <p>If you have any problem in your code, tell me and I will help you fix it.</p>
+                <a href="https://github.com/Robotic-ui">See GitHub repo <i class="ri-arrow-right-line"></i></a>
+            </div>
 
-            <article class="project-card">
-                <i class="ri-team-line icon"></i>
-                <h4>Collaboration</h4>
-                <p>
-                    Open to working on projects and building meaningful software together.
-                </p>
-                <a href="https://github.com/Robotic-ui" target="_blank">Visit Profile <i class="ri-arrow-right-line"></i></a>
-            </article>
-
+            <div class="card fade-in">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Cooperation</h4>
+                <p>You want to work together? Check my GitHub profile or email me at rusbacks8015@faytech.edu</p>
+                <a href="https://github.com/Robotic-ui">Open GitHub <i class="ri-arrow-right-line"></i></a>
+            </div>
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container footer-content">
-
-            <div class="socials">
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="https://github.com/Robotic-ui" target="_blank">
-                    <i class="ri-github-fill"></i>
-                </a>
-            </div>
-
-            <p>© 2026 Sebastian Rusbacky. All Rights Reserved.</p>
+    <footer class="fade-in">
+        <div class="socials slide-in">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
+        <div class="copyright fade-in">
+            &copy; 2023 <strong>Sebastian Rusbacky</strong>. All Rights Reserved.
         </div>
     </footer>
 
+    <script src="src/main.js"></script>
 </body>
 </html>
