@@ -35,16 +35,16 @@ nav
     justify-content: space-between;
     gap: 2rem;
     background-color: rgba(89, 89, 210, 0.86); /* Matches page background */
-    border-radius: 10px; /* Optional rounded corners */
+    border-radius: 10px; /* rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky; /* Makes navbar stick to top */
-    top: 10px; /* small gap from top */
+    top: 10px;
     z-index: 1000; /* stays above content */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    backdrop-filter: blur(8px); /* adds a subtle blur for transparency effect */
+    backdrop-filter: blur(8px); /* transparency effect */
 }
 
-/* chanegs navbar color when scrolling */
+/* changes navbar color when scrolling */
 nav.scrolled {
     background-color: rgba(89, 89, 210, 0.95);
 }
