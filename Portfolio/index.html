@@ -15,95 +15,94 @@
 
 <body>
 
-    <!-- Start of nav bar -->
-    <nav>
-        <div class="nav-item">
-            <a href="#">
-                <div>
-					<img src="images/logo.png">
-				</div>
-            </a>
-        </div>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
 
-		<div class="nav-item">
-			<ul class="nav-links">
-				<li class="link"><a href="index.html">Home</a></li>
-				<li id="nav-link1" class="link"><a href="about.html">About</a></li>
-				<li id="nav-link2" class="link"><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		
-		<div class="nav-item" width="20%">
-			<button class="btn">Hire me</button>
-		</div>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sebastian Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="btn">Hire Me</a>
+
+        </div>
     </nav>
-    <!-- End of nav bar -->
 
-    <header class="container">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h4>Let's create Together</h4>
-            <h1>Hi, I'm <span>Sebastian</span>, Beginner web dev!</h1>
+    <!-- ===== HERO SECTION ===== -->
+    <header class="hero container">
+        <div class="hero-content">
+            <h4>Let's Create Together</h4>
+            <h1>Hi, I'm <span>Sebastian</span></h1>
+            <h3>Beginner Web Developer</h3>
             <p>
-                I was Born in O'ahu, Hawaii on July 28th, 2004
+                Born in O'ahu, Hawaii on July 28th, 2004.
+                Passionate about building modern and functional websites.
             </p>
-            <a href="about.html" <button class="btn">Get to know me</button>
-            </a>
+            <a href="about.html" class="btn">Get to Know Me</a>
         </div>
-        <div class="image">
-            <img src="images/header.png">
+
+        <div class="hero-image">
+            <img src="images/header.png" alt="Developer Illustration">
         </div>
     </header>
 
-    <section class="container">
-        <h2 class="header">Past Projects</h2>
-        <div class="projects">
-            <div class="card">
-                <span><i class="ri-money-dollar-box-line"></i></span>
-                <h4>Port probing tool</h4>
-                <p>
-                    I created a port probing tool using Python which will automaticaly scan a hosts machine for
-                    vulnerabilities
-                </p>
-                <a href="https://github.com/Robotic-ui">See GitHub repo<i class="ri-arrow-right-line"></i></a>
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects-section container">
+        <h2>Past Projects</h2>
 
-            </div>
-            <div class="card">
-                <span><i class="ri-bug-line"></i></span>
-                <h4>Fix Your Bugs</h4>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <i class="ri-terminal-line icon"></i>
+                <h4>Port Probing Tool</h4>
                 <p>
-                    You have any problem in your codes? Tell me, i will help you fix it.
+                    Python-based tool that scans host machines for open ports
+                    and potential vulnerabilities.
                 </p>
-                <a href="https://github.com/Robotic-ui">See GitHub repo <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-shake-hands-line"></i></span>
-                <h4>Cooperation</h4>
+                <a href="https://github.com/Robotic-ui" target="_blank">View on GitHub <i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="project-card">
+                <i class="ri-bug-line icon"></i>
+                <h4>Bug Fix Assistance</h4>
                 <p>
-                    You want to work together? See my GitHub Profile or shoot me an Email @ rusbacks8015@faytech.edu
+                    Helping developers debug and improve their code efficiently.
                 </p>
-                <a href="https://github.com/Robotic-ui">open GitHub<i class="ri-arrow-right-line"></i></a>
-            </div>
+                <a href="https://github.com/Robotic-ui" target="_blank">View on GitHub <i class="ri-arrow-right-line"></i></a>
+            </article>
+
+            <article class="project-card">
+                <i class="ri-team-line icon"></i>
+                <h4>Collaboration</h4>
+                <p>
+                    Open to working on projects and building meaningful software together.
+                </p>
+                <a href="https://github.com/Robotic-ui" target="_blank">Visit Profile <i class="ri-arrow-right-line"></i></a>
+            </article>
+
         </div>
     </section>
 
-    <footer class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="socials">
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-twitch-fill"></i></a>
-            <a href="#"><i class="ri-github-fill"></i></a>
-        </div>
-        </div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-content">
 
-        <div class="copyright">
-            Copyright © 2023 <strong>Sebastian Rusbacky</strong> All Rights Reserved.
-        </div>
-        <script src="src/main.js"></script>
+            <div class="socials">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="https://github.com/Robotic-ui" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+            </div>
 
+            <p>© 2026 Sebastian Rusbacky. All Rights Reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>

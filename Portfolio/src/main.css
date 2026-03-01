@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
+/* ===== RESET ===== */
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -8,94 +9,81 @@
     box-sizing: border-box;
 }
 
-
-img{
-    display: flex;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-/* controls background color for all pages*/
-body{
+/* ===== BODY ===== */
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #5959d2dc;
 }
 
-nav{
-	border: 2px solid red; /*Remove this line before production*/
+/* ===== NAVBAR ===== */
+nav {
     max-width: 1200px;
-    margin: auto;
-    padding: 2rem 1rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #5959d2dc;
 }
 
-/*I used the inspect element to get the width/height of the image and button. I'm assuming you don't want them on every
-page, so I created divs their exact size to hold their places and keep the formatting of the navbar the same as you go from page to page*/
-
-#space_holder_img {
-	width:110px;
-	height:98px;
-}
-
-#space_holder_button {
-	width:120.01px;
-	height:50.4px;
-}
-
-#selfie {
-	background-color:teal;
-}
-
-#about_me {
-	color:white;
-}
-
-.center_horiz {
-	text-align:center;
-}
-	
-
-.nav-item{
-	border: 2px solid yellow; /*Remove this line before production*/
-	margin: 3px;
-	
-}
-
-.nav-links{
+/* Nav Links */
+.nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.link a{
+.link a {
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
-.link a::after{
+/* Hover underline animation */
+.link a::after {
     content: "";
     position: absolute;
     height: 2px;
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #ffffff;
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
+.link a:hover::after {
     width: 70%;
 }
 
-/* for this "Get to know me" button */
-.btn{
+/* Active page link */
+.link a.active {
+    color: #ffffff;
+}
+
+.link a.active::after {
+    width: 70%;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
@@ -105,41 +93,41 @@ page, so I created divs their exact size to hold their places and keep the forma
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #212637;
 }
-/* END of the btn */
 
-
-.container{
+/* ===== CONTAINER ===== */
+.container {
     max-width: 1200px;
     margin: auto;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
 }
 
-.blur{
+/* ===== BLUR EFFECT ===== */
+.blur {
     position: absolute;
     box-shadow: 0 0 1000px 50px #1d4ed8;
     z-index: -100;
 }
 
-header{
+/* ===== HEADER / HERO ===== */
+header {
     position: relative;
-    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
 }
 
-header .content h4{
+header .content h4 {
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
     font-weight: 600;
 }
 
-header .content h1{
+header .content h1 {
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -147,27 +135,21 @@ header .content h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
+header .content h1 span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
 
-/*Added this to format your <h4> element on about.html*/
-header .content h4 span{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
-}
-
-header .content p{
+header .content p {
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-header .image{
+header .image {
     position: relative;
 }
 
-header .image::before{
+header .image::before {
     content: "o";
     position: absolute;
     top: 0;
@@ -181,12 +163,13 @@ header .image::before{
     z-index: -100;
 }
 
-header .image img{
+header .image img {
     max-width: 600px;
     margin: auto;
 }
 
-section .header{
+/* ===== SECTION HEADER ===== */
+section .header {
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
@@ -194,29 +177,28 @@ section .header{
     font-weight: 600;
 }
 
-/* END OF NAV BAR AND HEADER */
-
-.projects{
+/* ===== PROJECTS ===== */
+.projects {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.projects .card{
+.projects .card {
     background-color: #27272a;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
-.projects .card:hover{
+.projects .card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.projects .card span{
+.projects .card span {
     display: inline-block;
     background-color: #1e40af;
     padding: 2px 9px;
@@ -226,60 +208,41 @@ section .header{
     border-radius: 5px;
 }
 
-.projects .card h4{
+.projects .card h4 {
     margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.projects .card p{
+.projects .card p {
     color: #ccc;
     margin-bottom: 1rem;
 }
 
-.projects .card a{
+.projects .card a {
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.projects .card a:hover{
+.projects .card a:hover {
     color: #1e40af;
 }
 
-.sub-header{
-    max-width: 600px;
-    margin: auto;
+/* ===== FOOTER ===== */
+footer {
+    padding: 2rem;
     text-align: center;
-    color: #ccc;
 }
 
-/* END OF INFO CARDS */
-
-footer{
-    position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
-}
-
-footer .column .logo{
-    max-width: 100px;
-    margin-bottom: 2rem;
-}
-
-footer .column p{
-    color: #ccc;
-    margin-bottom: 2rem;
-}
-
-footer .column .socials{
+footer .socials {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-footer .column .socials a{
+footer .socials a {
     color: #ccc;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -288,35 +251,13 @@ footer .column .socials a{
     transition: all 0.3s ease;
 }
 
-footer .column .socials a:hover{
+footer .socials a:hover {
     color: #fff;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
 
-footer .column h4{
-    color: #fff;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-footer .column > a{
-    display: block;
-    color: #ccc;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-}
-
-footer .column > a:hover{
-    color: #1d4ed8;
-}
-
-.copyright{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
+.copyright {
     color: #fff;
     font-size: 0.8rem;
-    text-align: center;
 }
