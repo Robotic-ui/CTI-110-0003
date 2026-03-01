@@ -8,6 +8,23 @@ function scrollToElement(elementSelector, instance = 0) {
     }
 }
 
+// sticky navbar scroll effect
+const navbar = document.querySelector('nav');
+
+const handleNavbarScroll = () =>
+{
+    if (window.scrollY > 50)
+    {
+        navbar.classList.add('scrolled');
+    }
+    else
+    {
+        navbar.classList.remove('scrolled');
+    }
+};
+
+window.addEventListener('scroll', handleNavbarScroll);
+
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
 
